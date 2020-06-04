@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>document</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/test.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/todo.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bad+Script">
+	<link rel="shortcut icon" href="assets/favicon.ico">
+	<link rel="icon" type="image/gif" href="assets/animated_favicon.gif">
+	<script defer type="text/javascript" src="script/script.js"></script>
+	<script defer src="script/test.js"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script defer src="script/wow.min.js"></script>
+	<script defer>
+		new WOW().init();
+	</script>
+</head>
+<body>
+	<div class="box">
+		<!-- HEADER -->
+		<header class="header">
+			<img src="https://trello-attachments.s3.amazonaws.com/5dbc399fd4fe8007c6553fe0/5e859c836f227d2562790a4c/2165x815/d5cd409dc296f3ee09df28bc3b5461a4/_D0_BB_D0_BE_D0_B3_D0_BE__D1_88_D0_BA_D0_BC__D1_80_D1_83_D1_81.png">
+			<h1>НОВАЯ ЭТИКА СОЦИАЛЬНОГО ВЗАИМОДЕЙСТВИЯ</h1>
+		</header>
+		<!-- MAIN -->
+		<main class="main">
+			<!-- RULES1 -->
+			<section class="section_left">
+				<h2 style="margin-top: 2.5%; font-size: 1.6em;">Правило 1</h2>
+				<h2 style="color: lightblue; ">Соблюдения питьевого режима</h2>
+				<p>Сколько необходимо выпить воды за 1 сутки?</p>
+				<p style="margin-top: 0.5%;">Ответ:</p>
+				<p style="margin-top: 2.5%;">Как правильно пить воду в течении дня?</p>
+				<p style="margin-top: 0.5%;">Ответ:</p>
+				<p style="margin-top: 2.5%;">К чему может привести недостаток воды?</p>
+				<p style="margin-top: 0.5%;">Ответ:</p>
+				<h2 style="margin-top: 10%;">Прогноз соблюдения питьевого режима в разных социальных образованиях</h2>
+				<table class="table1" border="1">
+					<tr>
+						<th>Социальное образование</th>
+						<th>Приблезительное количевсто людей</th>
+						<th>Приблезительный объем воды</th>
+					</tr>
+					<tr>
+						<td>Семья</td>
+						<td>4</td>
+						<td>3.6</td>
+					</tr>
+					<tr>
+						<td>Жители дома</td>
+						<td>108</td>
+						<td>54</td>
+					</tr>
+					<tr>
+						<td>Жители города</td>
+						<td>700000</td>
+						<td>350001</td>
+					</tr>
+					<tr>
+						<td>Жители Украины</td>
+						<td>42220000</td>
+						<td>21110001</td>
+					</tr>
+					<tr>
+						<td>Население Земли</td>
+						<td>7530000000</td>
+						<td>3765000001</td>
+					</tr>
+				</table>
+			</section>
+			<!-- RULES2 -->
+			<div class="white_block">
+				<h2>Правило №2</h2>
+				<h3>СОБЛЮДЕНИЯ КАЛОРИЙНОВОГО РЕЖИМА</h3>
+				<p class="p1">Сколько необходимо употреблять калорий за 1 день?</p>
+				<p class="p1">Вариабельно</p>
+				<p class="p1">Как правильно пить воду в течение дня?</p>
+				<p class="p1">Ответ: небольшими порциями в течение дня</p>
+				<img style="width: 90%" class="img2" src="img/IMG2.jpg">
+				<h3>Прогноз соблюдения питьевого режима в разных социальных образованиях</h3>
+				<p>Расчитуется по формуле:</p>
+				<p>Женщины: ((10 * вес, кг) + (6,25 * рост, см) — (5 * возраст) — 161)*Физическая активность</p>
+				<p>Мужчины: ((10 * вес, кг) + (6,25 * рост, см) — (5 * возраст) + 5)*Физическая активность</p>
+				<!-- <img style="width: 90%;" src="for.jpg"> -->
+				<div class="calculator2">
+					<div class="calculator">
+						<h3 class="h33">Для женщин</h3>
+						<p class="cal2">Вес <input type="text" id="n1"></p>		
+						<p class="cal2">Рост (см) <input type="text" id="n2"></p>		
+						<p class="cal2">Возрст <input type="text" id="n3"></p>		
+						<p class="cal2">Активность (в таблице) <input type="text" id="n4">	</p>		
+						<button class="cal" onclick="plus()">Вычислить</button>				
+						<p class="cal3" id="out">Ответ:</p>	
+					</div>	
+					<div class="calculator">
+						<h3 class="h33">Для мужчин</h3>
+						<p class="cal2">Вес <input type="text" id="n5"></p>		
+						<p class="cal2">Рост (см) <input type="text" id="n6"></p>		
+						<p class="cal2">Возрст <input type="text" id="n7"></p>		
+						<p class="cal2">Активность (в таблице) <input type="text" id="n8">	</p>		
+						<button class="cal" onclick="plus2()">Вычислить</button>				
+						<p class="cal3" id="out">Ответ:</p>	
+					</div>	
+				</div>	
+			</div>
+			<!-- RULES3 -->
+			<section class="rules3">
+				<h2>Правило №3</h2>
+				<h3>СОБЛЮДЕНИЯ ЗДОРОВОГО ОБРАЗА ЖИЗНИ</h3>
+				<p>Зачем необходимо делать зарядку?</p>
+				<p>Ответ:</p>
+				<p>К каким последсвиям может привести отсуствие физических упражнений?</p>
+				<p>Ответ:</p>
+				<p>Как смотивировать себя на зярядку?</p>
+				<p>Ответ:</p>
+				<video class="ViDeO" controls>
+					<source class="ViDeO" src="ViDeO.mp4" type="video/mp4">
+					</video>
+				</section>
+				<!-- RULES4 -->
+				<section class="rules4">
+					<h2>Правило №4</h2>
+					<h3>РЕЖИМ СНА</h3>
+					<p><b>1.Здоровый сон</b></p>
+					<p>Специалисты организации Nemours, которая занимается здоровьем детей, считают, что подростки должны спать около девяти часов в стуки. Тинейджеры редко столько лежат в кровати</p>
+					<p><b>Как сон влияет на подрастковое здоровье?</b></p>
+					<ul>
+						<li>Помогает подростку полноценно расти и развиваться;</li>
+						<li>Напрямую влияет на внимательность и успехи в школе;</li>
+						<li>Помогает добиваться успехов в спорте;</li>
+					</ul>
+					<p>Нарушения сна приводят к многочисленным сложностям со здоровьем
+						лишний вес и проблемы с сердцем, нарушения иммунитета
+					и эмоциональные проблемы</p>
+					<p><b>У подростков сбиваются биологические часы</b></p>
+					<p>В подростковом возрасте режим сна заметно отличается от детского или
+						взрослого. В этот период «сбрасывается» циркадный ритм (или
+						биологические часы), из-за чего тинейджеры засыпают и просыпаются
+						позже. Считается, что это связано с мелатонином — гормоном, который
+						регулирует наши биологические часы.У подростков он вырабатывается
+						позже, чем у маленьких детей или взрослых, что приводит к тому, что
+					ребёнок не хочет спать по вечерам.</p>
+					<hr>
+					<img src="img/img3.jpg">
+					<p><b>Мешают стресс и гаджеты</b></p>
+					<p>Есть и ещё одна причина нарушения сна — стресс. В подростковом возрасте
+						уребёнка больше обязанностей: ЕГЭ, репетиторы, грядущее поступление,
+					половое созревание. Мозг постоянно возбуждён.</p>
+					<p>Также достаточно распространённая причина нарушения сна — привычка
+						ложиться спать с телефоном или планшетом. Большое количество
+						информации не даёт мозгу успокоиться, поэтому подростку тяжело заснуть
+					К слову, такой же эффект вызывают поздние раунды в Fortnite или «Доту».</p>
+					<img src="img/img4.jpg">
+					<p><b>Как помочь подростку высыпаться?</b></p>
+					<p>Вот советы, которые помогают выровнять режим сна</p>
+					<ul>
+						<li>Ложиться спать и просыпаться в одно и то же время, даже в выходные;</li>
+						<li>Больше физической активности, но, главное, не перед сном (нужно около
+						трёх часов, чтобы организм успокоился);</li>
+						<li>Пить меньше кофе, чая и энергетиков;</li>
+						<li>Перестать пользоваться электроникой хотя бы за час до сна;</li>
+						<li>Зажигать в комнате подростка ночник и проветривать по вечерам</li>
+					</ul>
+					<p><b>Последствия недосыпа</b></p>
+					<p>ЕСЛИ подростки не получают положенных 3-10 часов сна каждую ночь, они могут столкнуться со многими неприятными
+					последствиями, такими как</p>
+					<ul>
+						<li>Депрессия. Согласно исследованиям, молодые люди, которые ложатся позже, более склонны к развитию депрессии и мыслям
+						о самоубийстве. В мозгу, похоже, существует связь между сном и депрессией.</li>
+						<li>Плохие оценки. У подростков, которые не высыпаются, обычно появляются проблемы с памятью и школьной успеваемостью.</li>
+						<li>Поведение. От нехватки сна может снижаться внимание, как результат — гиперактивность и новые скандалы.</li>
+						<li>Дорожно-транспортные происшествия. У сонного подростка, как правило, замедленная реакция, поэтому он рискует стать
+						участником ДТП.</li>
+					</ul>
+					<table class="table1" border="1">
+						<tbody>
+							<tr>
+								<th>Член семьи</th>
+								<th>Возраст</th>
+								<th>Ложится спать</th>
+								<th>Встает</th>
+								<th>Всего спит</th>
+								<th>Должен спать</th>
+								<th>Вывод</th>
+							</tr>
+							<tr>
+								<td>Брат</td>
+								<td>14</td>
+								<td>21ч</td>
+								<td>7ч</td>
+								<td>9ч</td>
+								<td>10ч</td>
+								<td>Все хорошо</td>
+							</tr>
+							<tr>
+								<td>Я</td>
+								<td>14</td>
+								<td>21ч</td>
+								<td>7ч</td>
+								<td>9ч</td>
+								<td>10ч</td>
+								<td>Все хорошо</td>
+							</tr>
+							<tr>
+								<td>Мама</td>
+								<td>42</td>
+								<td>23ч</td>
+								<td>6ч</td>
+								<td>7ч</td>
+								<td>8ч</td>
+								<td>Все хорошо</td>
+							</tr>
+							<tr>
+								<td>Папа</td>
+								<td>42</td>
+								<td>23ч</td>
+								<td>5ч</td>
+								<td>7ч</td>
+								<td>8ч</td>
+								<td>Все хорошо</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+				<!-- RULES5 -->
+				<section class="rules5">
+					<img style="width: 90%;" src="img/Cl7KcBqp3wCyCwORUnpQuILMQ4XAM7Jout4T6kei.png">
+					<h2>Правило 5</h2>
+					<p><b>Что такое хронотип?</b></p>
+					<p><b>Хронотип</b> - это характер организации суточных (циркадных) биоритмов человека.</p>
+					<p>Хронотип отражает суточную динамику функциональной активности различных органов
+						и систем организма (время пробуждения и засыпания, работоспособность, 24-часовой
+						риты артериального давления и др.)
+					</p>
+					<p>В зависимости от активности человека в то или иное время суток выделяют 3
+					хронотипа</p>
+					<ul>
+						<li>«аворонкиэк» - утренний тип;</li>
+						<li>«голуби» - дневной тип;</li>
+						<li>«совы» - вечерний тип;</li>
+					</ul>
+					<p style="margin-top: 5%; text-align: center;"><b>Психофизиологические различия утреннего и вечернего типа</b></p>
+					<table class="table1" border="1">
+						<tr>
+							<th style="width: 50%;">Параметр</th>
+							<th style="width: 25%;">"Жаворонок"</th>
+							<th style="width: 25%;">"Сова"</th>
+						</tr>
+						<tr>
+							<td><b>Время пробуждения</b></td>
+							<td>4.00-6.00</td>
+							<td>8.00-10.00</td>
+						</tr>
+						<tr>
+							<td><b>Время засыпания</b></td>
+							<td>20.00-22.00</td>
+							<td>24.00-2.00</td>
+						</tr>
+						<tr>
+							<td><b>Пик активности</b></td>
+							<td>8.00-10.00</td>
+							<td>после 16.00</td>
+						</tr>
+						<tr>
+							<td><b>Доминирующее полушария мозга</b></td>
+							<td>Левое</td>
+							<td>Правое</td>
+						</tr>
+						<tr>
+							<td><b>Творческая активность</b></td>
+							<td>Меньше</td>
+							<td>Больше</td>
+						</tr>
+					</table>
+					<!-- TEST -->
+					<div class="section-test-block">
+						<div class="section-test">
+							<div class="section-test-title">
+								<h2>Выявление хронотипа работоспособности человека (тест О.Остберга)</h2>
+							</div>
+							<input type="radio" id="tab-1" class="del" name="tabs" checked>
+							<input type="radio" id="tab-2" class="del" name="tabs">
+							<input type="radio" id="tab-3" class="del" name="tabs">
+							<input type="radio" id="tab-4" class="del" name="tabs">
+							<input type="radio" id="tab-5" class="del" name="tabs">
+							<input type="radio" id="tab-6" class="del" name="tabs">
+							<input type="radio" id="tab-7" class="del" name="tabs">
+							<input type="radio" id="tab-8" class="del" name="tabs">
+							<input type="radio" id="tab-9" class="del" name="tabs">
+							<input type="radio" id="tab-10" class="del" name="tabs">
+							<input type="radio" id="tab-11" class="del" name="tabs">
+							<input type="radio" id="tab-12" class="del" name="tabs">
+							<input type="radio" id="tab-13" class="del" name="tabs">
+							<input type="radio" id="tab-14" class="del" name="tabs">
+							<input type="radio" id="tab-15" class="del" name="tabs">
+							<input type="radio" id="tab-16" class="del" name="tabs">
+							<div class="test wow fadeInRight del" id="form-1">
+								<div class="test_text_block">
+									<p> Трудно ли вам вставать рано утром?</p>
+								</div>
+								<div class="test_button_block">
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="no">
+										<label for="no">Крайне редко</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="maybe">
+										<label for="maybe">Редко</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="yes">
+										<label for="yes">Иногда</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="ok">
+										<label for="ok">Да, почти всегда </label>
+									</div>
+								</div>
+								<div class="test_button">
+									<label for="tab-2" class="tab">Далее</label>
+								</div>
+							</div>
+							<div class="test wow fadeInRight del" id="form-2">
+								<div class="test_text_block">
+									<p> Если у вас есть возможность выбора, в какое время вы бы ложились спать?</p>
+								</div>
+								<div class="test_button_block">
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="no2">
+										<label for="no2">до 22 часов 0
+										</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="maybe2">
+										<label for="maybe2">с 22 до 23 часов</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="yes2">
+										<label for="yes2">с 23 до 1 часа ночи</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="ok2">
+										<label for="ok2">после 1 часа ночи </label>
+									</div>
+								</div>
+								<div class="test_button">
+									<label for="tab-3" class="tab">Далее</label>
+								</div>
+							</div>
+							<div class="test wow fadeInRight del" id="form-3">
+								<div class="test_text_block">
+									<p>Какой завтрак вы предпочитаете в течение первого часа после пробуждения?</p>
+								</div>
+								<div class="test_button_block">
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="no3">
+										<label for="no3">Плотный</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="maybe3">
+										<label for="maybe3">Не очень плотный</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="yes3">
+										<label for="yes3">Можно ограничиться вареным яйцом</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="ok3">
+										<label for="ok3">достаточно чашки чая или кофе</label>
+									</div>
+								</div>
+								<div class="test_button">
+									<label for="tab-4" class="tab">Далее</label>
+								</div>
+							</div>
+							<div class="test wow fadeInRight del" id="form-4">
+								<div class="test_text_block">
+									<p>Если вспомнить ваши последние размолвки на работе и дома, когда они преимущественно
+									происходили?</p>
+								</div>
+								<div class="test_button_block">
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="no4">
+										<label for="no4">Во второй половине дня</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="maybe4">
+										<label for="maybe4">В первой половине дня</label>
+									</div>
+								</div>
+								<div class="test_button">
+									<label for="tab-5" class="tab">Далее</label>
+								</div>
+							</div>
+							<div class="test wow fadeInRight del" id="form-5">
+								<div class="test_text_block">
+									<p>От чего легче отказаться:</p>
+								</div>
+								<div class="test_button_block">
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="no5">
+										<label for="no5">От вечернего чая</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="maybe5">
+										<label for="maybe5">от утреннего чая или кофе</label>
+									</div>
+								</div>
+								<div class="test_button">
+									<label for="tab-6" class="tab">Далее</label>
+								</div>
+							</div>
+							<div class="test wow fadeInRight del" id="form-6">
+								<div class="test_text_block">
+									<p>Как точно вы рассчитываете время в течение 1 минуты?</p>
+								</div>
+								<div class="test_button_block">
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="no6">
+										<label for="no6">Меньше минуты</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="maybe6">
+										<label for="maybe6">Больше минуты </label>
+									</div>
+								</div>
+								<div class="test_button">
+									<label for="tab-7" class="tab">Далее</label>
+								</div>
+							</div>
+							<div class="test wow fadeInRight del" id="form-7">
+								<div class="test_text_block">
+									<p>Как легко вы можете изменить привычки, связанные с едой, во время отпуска?</p>
+								</div>
+								<div class="test_button_block">
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="no7">
+										<label for="no7">Очень легко</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="maybe7">
+										<label for="maybe7">Легко</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="yes7">
+										<label for="yes7">Трудно</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="ok7">
+										<label for="ok7">Не можете изменить</label>
+									</div>
+								</div>
+								<div class="test_button">
+									<label for="tab-8" class="tab">Далее</label>
+								</div>
+							</div>
+							<div class="test wow fadeInRight del" id="form-8">
+								<div class="test_text_block">
+									<p>Если рано утром предстоят важные дела, насколько раньше вы ложитесь спать?</p>
+								</div>
+								<div class="test_button_block">
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="no8">
+										<label for="no8">Как обычно</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="maybe8">
+										<label for="maybe8">Менее чем на час </label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="yes8">
+										<label for="yes8">На час-два</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="ok8">
+										<label for="ok8">Более чем на два часа</label>
+									</div>
+								</div>
+								<div class="test_button">
+									<label for="tab-9" class="tab">Далее</label>
+								</div>
+							</div>
+							<div class="test wow fadeInRight del" id="form-9">
+								<div class="test_text_block">
+									<p>Если вы ложитесь спать в 23.00, то какова степень вашей усталости?</p>
+								</div>
+								<div class="test_button_block">
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="no9">
+										<label for="no9">Совсем не усталый</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="maybe9">
+										<label for="maybe9">Слегка усталый</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="yes9">
+										<label for="yes9">Относительно</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="ok9">
+										<label for="ok9">Усталый</label>
+									</div>
+								</div>
+								<div class="test_button">
+									<label for="tab-10" class="tab">Далее</label>
+								</div>
+							</div>
+							<div class="test wow fadeInRight del" id="form-10">
+								<div class="test_text_block">
+									<p> Какова степень вашей зависимости от будильника, если утром вы должны встать в
+									определенное время?</p>
+								</div>
+								<div class="test_button_block">
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="no10">
+										<label for="no10">Зависим</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="maybe10">
+										<label for="maybe10">В большой степени зависим </label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="yes10">
+										<label for="yes10">Иногда зависим</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="ok10">
+										<label for="ok10">Cовсем независим</label>
+									</div>
+								</div>
+								<div class="test_button">
+									<label for="tab-11" class="tab">Далее</label>
+								</div>
+							</div>
+							<div class="test wow fadeInRight del" id="form-11">
+								<div class="test_text_block">
+									<p>Как вы деятельны в первые полчаса после утреннего вставания?</p>
+								</div>
+								<div class="test_button_block">
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="no11">
+										<label for="no11">Большая вялость</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="maybe11">
+										<label for="maybe11">Небольшая вялость</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="yes11">
+										<label for="yes11">Относительно деятелен </label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="ok11">
+										<label for="ok11">Очень деятелен</label>
+									</div>
+								</div>
+								<div class="test_button">
+									<label for="tab-12" class="tab">Далее</label>
+								</div>
+							</div>
+							<div class="test wow fadeInRight del" id="form-12">
+								<div class="test_text_block">
+									<p>Вы решили заниматься физкультурой .Ваш друг предложил заниматься дважды в неделю,
+									по 1 часу утром, между 7 и 8 часами утра. Будет ли это благоприятным временем для вас?</p>
+								</div>
+								<div class="test_button_block">
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="no12">
+										<label for="no12">Трудно</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="maybe12">
+										<label for="maybe12">Относительно</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="yes12">
+										<label for="yes12">Приемлено</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="ok12">
+										<label for="ok12">Благоприятно</label>
+									</div>
+								</div>
+								<div class="test_button">
+									<label for="tab-13" class="tab">Далее</label>
+								</div>
+							</div>
+							<div class="test wow fadeInRight del" id="form-13">
+								<div class="test_text_block">
+									<p>Вам предстоит какая-либо работа или отъезд ночью, между 4 и 6 часами. На следующий день
+									у вас нет никаких обязанностей .Какую из следующих возможностей вы выберете?</p>
+								</div>
+								<div class="test_button_block">
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="no13">
+										<label for="no13">Сплю сразу после ночной работы</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="maybe13">
+										<label for="maybe13">Перед ночной работой дремлю, а после нее сплю</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="yes13">
+										<label for="yes13">перед ночной работой сплю, а после нее дремлю </label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="ok13">
+										<label for="ok13">высыпаюсь перед ночной работой</label>
+									</div>
+								</div>
+								<div class="test_button">
+									<label for="tab-14" class="tab">Далее</label>
+								</div>
+							</div>
+							<div class="test wow fadeInRight del" id="form-14">
+								<div class="test_text_block">
+									<p>Иногда говорят “утренний человек ” и “вечерний человек”.
+									К какому типу вы себя относите ?</p>
+								</div>
+								<div class="test_button_block">
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="no14">
+										<label for="no14">Сова</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="maybe14">
+										<label for="maybe14">Голубь</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="yes14">
+										<label for="yes14">Жаворонок</label>
+									</div>
+								</div>
+								<div class="test_button">
+									<label for="tab-15" class="tab">Далее</label>
+								</div>
+							</div>
+							<div class="test wow fadeInRight del" id="form-15">
+								<div class="test_text_block">
+									<p>ЧУ вас возникло решение серьезно заниматься закаливанием организма. Друг предложил
+										делать это дважды в неделю, по 1 часу , между 22 и 23 часами вечера.
+										Как вас устраивает это время?
+									</p>
+								</div>
+								<div class="test_button_block">
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="no15">
+										<label for="no15">Да, устраивает</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="maybe15">
+										<label for="maybe15">буду в хорошей форме</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="yes15">
+										<label for="yes15">в плохой форме</label>
+									</div>
+									<div class="answer">
+										<input type="radio" class="test_radio del" name="test_radio_tab" id="ok15">
+										<label for="ok15">не устраивает</label>
+									</div>
+								</div>
+								<div class="test_button">
+									<label for="tab-16" class="tab">Далее</label>
+								</div>
+							</div>
+							<div class="test wow fadeInRight del" id="form-16">
+								<div class="finish-block">
+									<p class="results_text"></p>
+								</div>
+								<div class="test_button">
+									<label for="tab-16" class="tab" id="get_res">Завершить</label>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="rules6">
+						<h2>Правило №5</h2>
+						<h2>Режим труда и отдыха</h2>
+						<h2>«Метод помидора»</h2>
+						<img style="width: 50%; margin-left: 25%; margin-right: 25%;" src="img/icon.png">
+						<p>Всего 5 простых шагов:</p>
+						<ul>
+							<li>1. Определите ичетко сформулируйте задачу.
+								Очень важно понимать, что и зачем вы собираетесь делать следующие 25 минут
+							</li>
+							<li>
+								2. Заведите таймер на 25 минут.
+								Помогаетчему 25? Согласно исследованиям психологов, человек может концентрироваться
+								на чем-то максимум 50 минут. 25 минут — это один «помидор». Один помидор
+								беспрерывной работы
+							</li>
+							<li>3. Приступайте к работе, пока не зазвонит таймер.
+								Дайте себе слово, не отвлекаться от задачи все 25 минут, Ни на звонки, ни на
+								сообщения или письма, ни на коллег. Только работа над поставленной задачей
+							</li>
+							<li>
+								4. Сделайте перерыв на 5 минут.
+								Можно ответить на пропущенные звонки и письма, а лучше встать и размяться.
+							</li>
+							<li>
+								5. После 4 помидоров сделайте большой перерыв.
+							</li>
+						</ul>
+						<div id="promodoro-app">
+							<div id="container">
+								<div style="border: 10px solid white;" id="timer">
+									<div id="timer">
+										<div id="timer">
+											<span id="minutes">25</span>
+											<span id="colon">:</span>
+											<span id="second">00</span>
+										</div>
+										<div id="filler"></div>
+									</div>
+								</div>
+								<div id="buttons">
+									<button id="work">Начать</button>
+									<button id="shortBreak">5 мин</button>
+									<button id="longBreak">15 мин</button>
+									<button id="stop">Стоп</button>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="rules7">
+						<h2 style="margin-top: 2.5%; font-size: 1.6em;">Правило 7</h2>
+						<h2 style="color: lightblue;"><img style="width: 15%; float: right;" src="img/112371.jpg">Эффективное планирование</h2>
+						<p>>Многие вещи лучше всего делать прямо сегодня и сейчас, однако начать планировать лучше всего в начале недели или месяца и делать это регулярно. Впрочем, если вы фрилансер, то можете начать сейчас.
+						Существуют сотни самых разных методик и приложений, которые позволят вам эффективно планировать свое время.</p>
+						<p><b>Важность планирования</b></p>
+						<p>Если вы планируете эффективно и с умом, то это умение позволяет вам:</p>
+						<ul>
+							<li>Понимать, за какое время реально достичь определенной цели.</li>
+							<li>Убеждаться, что у вас есть достаточно времени для выполнения самых важных задач.</li>
+							<li>Планировать время на случай непредвиденных обстоятельств.</li>
+							<li>Избегать брать на себя такое количество дел, которые вы не сможете выполнить.</li>
+							<li>Упорно работать над своими личными и карьерными целями.</li>
+							<li>Иметь достаточно времени на семью, друзей, саморазвитие и хобби.</li>
+							<li>Достигать баланса в жизни.</li>
+						</ul>
+					</section>
+					<section class="rules8">
+						<h2 style="margin-top: 2.5%; font-size: 1.6em; margin-left: 4%;">Правило 8</h2>
+						<h2 style="color: lightblue;"><img style="width: 15%; float: right;" src="img/aktivaciya-mozga.jpg">Активация мозга</h2>
+						<p><b>ГИМНАСТИКА ДЛЯ МОЗГА – ТРЕНИРУЕМ УМ</b></p>
+						<p>Мы привыкли, что можно тренировать тело — выполнять физические упражнения, ходить в
+							тренажерный зал или хотя бы делать зарядку по утрам. Но давно доказано, что мозг тоже
+							поддается тренировке. Что самое интересное, тренировать его можно не только на
+							ментальном уровне, но и на физическом, выполняя специальные упражнения. Звучит
+						фантастически? Возможно, но этому есть вполне реальное объяснение.</p>
+						<p><b>ТРЕНИРОВКА МОЗГА - ПРАВДА ИЛИ МИФ?</b></p>
+						<p>определенные движения тела влияют на состояние мозга. Следовательно, если выполнять
+							специально подобранные упражнения, мозг можно развивать. И в этом нет ничего
+							удивительного, ведь организм человека - это целостная система, в которой тело и ум тесно
+						взаимосвязаны.</p>
+						<p>Американские исследователи Гейл и Пойл Деннисон пошли дальше своих коллег и
+							разработали целую программу интеллектуального развития — нейрогимнастику, то есть
+						гимнастику для мозга.</p>
+						<p>Нейрогимнастика - это комплекс упражнений, направленных на активацию естественных
+							механизмов работы мозга через выполнение физических движений. Упражнения объединяют
+							движение и мысль, то есть активизируют и задействуют связи между системами «тело» и
+
+						«ум».</p>
+						<p><b>ПОЛОЖИТЕЛЬНЫЕ ЭФФЕКТЫ НЕЙРОГИМНАСТИКИ
+						</b></p>
+						<ul>
+							<li>лучшее восприятие и запоминание новой информаци;</li>
+							<li> улучшение состояния нервной системы;
+							</li>
+							<li> развитие мелкой моторики, памяти, внимания, речи;</li>
+							<li>синхронизация работы правого и левого полушарий головного мозга.
+
+								Согласно подсчетам, лишь 10 % населения планеты задействуют правое «творческое»
+								полушарие мозга наравне с левым «логическим». Но также доказано, что максимального
+								умственного развития можно достичь только при скоординированной работе сразу 2
+								полушарий. Если вы хотите вырастить своего ребенка умным и самодостаточным, приложите
+							все усилия для гармоничного развития его мозга.</li>
+						</ul>
+						<p><b>КАК РАЗВИТЬ ЛЕВОЕ ПОЛУШАРИЕ
+						</b></p>
+						<p>Левое полушарие отвечает за логическое и рациональное мышление и в силу нашего стиля
+							жизни доминирует практически у всех людей, за исключением левшей. Система образования
+							построена на развитии именно левого полушария, то есть необходимые навыки ребенок
+						получает уже в школе. Но есть несколько способов, как ускорить этот процесс:</p>
+						<ul>
+							<li>ежедневно решать математические задачи разной сложности;</li>
+							<li>тренироваться в задачках на логику и смекалку;</li>
+							<li>разгадывать ребусы, кроссворды, шарады и т.д.</li>
+						</ul>
+						<p><b>КАК РАЗВИТЬ ПРАВОЕ ПОЛУШАРИЕ</b></p>
+						<p>Установлено, что правое полушарие, отвечающее за творческое и образное мышление,
+							доминирует у людей с рождения. Однако в процессе обучения происходит перекос в сторону
+							левого полушария, которое постепенно подавляет правое. У левшей правое полушарие все
+						равно остается доминирующим, но вот другим детям полезно развивать его специально:</p>
+						<ul>
+							<li>посещать творческие мероприятия (выставки, музеи, галереи и т.д.);</li>
+							<li>сочинять стихотворения или рассказ;</li>
+							<li>задействовать левую руку при выполнении привычных действий;</li>
+							<li>визуализировать различные образы;</li>
+							<li>воспроизводить в уме знакомые звуки, запахи, ощущения.</li>
+						</ul>
+						<p>Но главное условие всестороннего развития ребенка - тренировка и налаживание связи
+							между полушариями. Для этого и нужны нейрогимнастические упражнения. Наибольший
+							эффект от их выполнения наблюдается у детей от 7 до 12 лет - в этом возрасте они наиболее
+						активны и любознательны.</p>
+						<a data-fancybox="gallery" href="https://vimeo.com/421512870" 
+						data-caption="Praesent commodo cursus magna, vel scelerisque nisl consectetur et.<br /><small>Author: <a href=&quot;https://www.flickr.com/photos/94276980@N08/&quot;>Bobby Brown</a></small>"><img class="card-img-top img-fluid" src="img/WIN_20200522_15_39_04_Pro.jpg"></a>
+						<a data-fancybox="gallery" href="https://vimeo.com/user116122169/review/421521449/1261574e09" data-caption="Donec sed odio dui.<br /><small>Author: <a href=&quot;https://www.flickr.com/photos/94276980@N08/&quot;>Jesse Jackson</a></small>"><img class="card-img-top img-fluid" src="img/WIN_20200522_15_39_21_Pro.jpg"></a>
+						<a data-fancybox="gallery" href="https://vimeo.com/user116122169/review/421521549/466f613f90" data-caption="Nulla vitae elit libero, a pharetra augue.<br /><small>Author: <a href=&quot;https://www.flickr.com/photos/94276980@N08/&quot;>Paul Peterson</a></small>"><img class="card-img-top img-fluid" src="img/WIN_20200522_15_39_30_Pro.jpg"></a>
+					</section>
+					<section class="rules9">
+						<h2 style="margin-top: 2.5%; font-size: 1.6em; margin-left: 4%;">Правило 9</h2>
+						<h2 style="color: lightblue;">Эмоциональная поддержка</h2>
+						<p>Когда особо необходима поддержка? Поддержку можно и нужно оказывать человеку, который находится во взрослой и проактивной позиции, но имеет недостаточно эмоциональных (нергетических) ресурсов, чтобы самостоятельно справиться с ситуацией. Но особо важна она</p>
+						<ul class="ul">
+							<div class="card">
+								<div class="front">в период...</div>
+								<div class="back"><span>принятия важных жизненных решений;</span></div>
+							</div>
+							<div class="card">
+								<div class="front">в период...</div>
+								<div class="back"><span> кризисов и спадов;</span></div>
+							</div>
+							<div class="card">
+								<div class="front">в период...</div>
+								<div class="back"><span>критических нагрузок на работе (учебе);</span></div>
+							</div>
+							<div class="card">
+								<div class="front">в период...</div>
+								<div class="back"><span>адаптации к новой должности и коллективу;</span></div>
+							</div>
+							<div class="card">
+								<div class="front">в период...</div>
+								<div class="back"><span>выздоровления или реабилитации;</span></div>
+							</div>
+							<div class="card">
+								<div class="front">в период...</div>
+								<div class="back"><span> когда человек допустил ошибку;</span></div>
+							</div>
+							<div class="card">
+								<div class="front">в период...</div>
+								<div class="back"><span>  когда человека осуждают или в чем-то обвиняют;</span></div>
+							</div>
+							<div class="card">
+								<div class="front">в период...</div>
+								<div class="back"><span> когда человек пережил утрату;</span></div>
+							</div>
+						</ul>
+						<h2 style="clear: both;">Способы оказания эмоциональной поддержки</h2>
+						<div style="width: 50%; height: 300px;" class="card">
+							<div class="front">Способ 1</div>
+							<div class="back"><span>Современное общество диктует сценарий, при котором человек должен рассчитывать только на	себя. Спасение утопающих — дело рук самих утопающих. В своем исследовании современной культуры Запада психолог Пол Экман писал: «Ёсли мне хорошо, то почему я должен заботиться о других, — ведь я не нуждаюсь в них для того, чтобы обезопасить себя. Я не
+							нуждаюсь в них для того, чтобы справиться с имеющимися угрозами».</span></div>
+						</div>
+						<div style="width: 50%; height: 300px;" class="card">
+							<div class="front">Способ 2</div>
+							<div class="back"><span>Несмотря на это, у каждого из нас в жизни случаются кризисы, изменения и временные спады жизненных сил. Не получив понимания и поддержки в нужный момент, мы можем замыкаться в себе, вынашивать обиду, которая со временем может трансформироваться в гнев на себя и весь мир. Последствия этого могут быть самые разрушительные.</span></div>
+						</div>
+					</section>
+					<!-- BUTTONS -->
+					<section class="section_right">
+						<button class="button" style="background: #bbce00;" onclick="rules1()">
+							<h2>Правило 1</h2>
+						</button>
+						<button class="button" style="background: #e7fe0e;" onclick="rules2()">
+							<h2>Правило 2</h2>
+						</button>
+						<button class="button" style="background: #f7aa04;" onclick="rules3()">
+							<h2>Правило 3</h2>
+						</button>
+						<button class="button" style="background: #c8e7f9;" onclick="rules4()">
+							<h2>Правило 4</h2>
+						</button>
+						<button class="button" style="background: #4795e7;" onclick="rules5()">
+							<h2>Правило 5</h2>
+						</button>
+						<button class="button" style="background: #a64b39;" onclick="rules6()">
+							<h2>Правило 6</h2>
+						</button>
+						<button class="button" style="background: #e7fe0e;" onclick="rules7()">
+							<h2>Правило 7</h2>
+						</button>
+						<button class="button" style="background: #f7aa04;" onclick="rules8()">
+							<h2>Правило 8</h2>
+						</button>
+						<button class="button" style="background: #c8e7f9;" onclick="rules9()">
+							<h2>Правило 9</h2>
+						</button>
+					</section>
+				</main>
+				<!-- FOOTER -->
+				<footer class="footer">
+					<p><b>Заклёпный Артём, Гришко Георгий</b></p>
+				</footer>
+			</div>
+		</body>
+		</html>
