@@ -1,0 +1,70 @@
+@media screen and (max-width: 568px) {
+	
+	header .logotype {
+		margin-top: 30px;
+	}
+
+	header .logotype img {
+		width: 100px;
+		height: 70px;
+		margin-top: 0;
+	}
+
+	header .btn {
+		top: 30px;
+	}
+
+	header .titl {
+		margin-top: 10px;
+		font-size: 12px;
+	}
+
+	header .top-sur h1 {
+		margin-bottom: 130px;
+		font-size: 22px;
+	}
+
+	header .top-text {
+		font-size: 12px;
+	}
+
+	#about .some-about p,
+	#about .knowledge p,
+	#about .self p {
+		font-size: 13px;
+	}
+
+	#about .skils h2 {
+		font-size: 27px;
+		font-weight: normal;
+	}
+
+	#portfolio .top-text-pt h2 {
+		margin-top: 60px;
+		margin-bottom: 50px;
+	}
+
+	#portfolio .top-menu-pt li {
+		margin: 0;
+	}
+
+	#portfolio .content-potfol .work{
+		height: 150px;
+	}
+
+	#portfolio .port-item-cont h4 {
+		font-size: 18px;
+		margin-bottom: -5px;
+	}
+
+	#portfolio .port-item-cont p {
+		padding-top: 20px;
+		margin-bottom: 25px;
+		font-size: 11pt;
+	}
+
+	#portfolio .top-menu {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
